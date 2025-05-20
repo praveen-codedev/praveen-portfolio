@@ -1,0 +1,262 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #121018; /* light black */
+  color: #d1d1e9;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(90deg, #3a0ca3, #720026); /* dark purple gradient */
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.top-icons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #d1d1e9;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.top-icons i {
+  margin-right: 0.3rem;
+  color: #a27bc0;
+}
+
+.top-icons span {
+  display: none; /* hide text, show only icons */
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.3rem;
+  color: #e0c3fc;
+  text-shadow: 0 0 6px #7b2ff7;
+}
+
+header p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #c6b7f0;
+  margin-bottom: 1.5rem;
+}
+
+/* Profile Image */
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #a27bc0;
+  object-fit: cover;
+  margin: 0 auto 2rem auto;
+  display: block;
+  box-shadow: 0 0 15px #7b2ff7;
+}
+
+/* Download Resume Button */
+.resume-btn {
+  background: #7b2ff7;
+  color: white;
+  padding: 0.7rem 2.2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #7b2ff7;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.resume-btn:hover {
+  box-shadow: 0 0 25px #d4a3fc;
+  transform: scale(1.1);
+}
+
+/* Sections */
+section {
+  max-width: 850px;
+  margin: 3rem auto;
+  padding: 0 1.2rem;
+}
+
+h2 {
+  color: #a27bc0;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 0 4px #7b2ff7;
+}
+
+/* Projects container */
+.projects-container {
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background: #1f1a2e;
+  padding: 1.3rem 1.5rem;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 0 12px #6e44ff55;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  color: #ccc;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px #7b2ff7cc;
+}
+
+/* Social Icons section */
+#connect {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.social-icons a {
+  color: #a27bc0;
+  font-size: 2.4rem;
+  margin: 0 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #d4a3fc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #2a243e;
+}
+
+#details {
+  max-width: 850px;
+  margin: 3rem auto;
+  padding: 0 1.2rem;
+}
+
+.detail-card {
+  background: #201a34;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.8rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #6e44ff55;
+  color: #ddd;
+  transition: box-shadow 0.3s ease;
+}
+
+.detail-card:hover {
+  box-shadow: 0 0 30px #7b2ff7cc;
+}
+
+.detail-card h3 {
+  color: #a27bc0;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.detail-card p, .detail-card ul {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.detail-card ul {
+  padding-left: 1.4rem;
+}
+
+.detail-card ul li {
+  margin-bottom: 0.4rem;
+}
+
+#contact {
+  max-width: 600px;
+  margin: 3rem auto 4rem;
+  padding: 0 1rem;
+  text-align: center;
+  color: #ccc;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+  color: #a27bc0;
+  font-size: 1.1rem;
+}
+
+.contact-item i {
+  margin-right: 0.6rem;
+  color: #7b2ff7;
+}
+
+.contact-item a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #7b2ff7;
+}
+
+.download-btn {
+  background: linear-gradient(45deg, #6e44ff, #a27bc0);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px #7b2ff7;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.download-btn:hover {
+  box-shadow: 0 0 25px #a27bc0;
+  transform: scale(1.05);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 0.8rem;
+}
+
+.social-icons a {
+  color: #a27bc0;
+  font-size: 2.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #7b2ff7;
+  transform: scale(1.2);
+}
